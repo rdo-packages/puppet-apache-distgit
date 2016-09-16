@@ -7,8 +7,8 @@
 
 
 Name:           puppet-apache
-Version:        XXX
-Release:        XXX
+Version:        1.10.0
+Release:        1%{?alphatag}%{?dist}
 Summary:        Installs, configures, and manages Apache virtual hosts, web services, and modules.
 License:        Apache-2.0
 
@@ -50,4 +50,6 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/apache/
 
 
 %changelog
+* Fri Sep 16 2016 Haikel Guemar <hguemar@fedoraproject.org> 1.10.0-1.c04e062.git
+- Newton update 1.10.0 (c04e0620defb953a27cace6409e74ad1b708a2f4)
 
