@@ -1,6 +1,6 @@
 %{!?upstream_version: %global upstream_version %{commit}}
 %define upstream_name puppetlabs-apache
-%global commit c04e0620defb953a27cace6409e74ad1b708a2f4
+%global commit 05a0aac78092e46d544e03ad9adf796ae76f7ec2
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
@@ -8,7 +8,7 @@
 
 Name:           puppet-apache
 Version:        1.10.0
-Release:        1%{?alphatag}%{?dist}
+Release:        2%{?alphatag}%{?dist}
 Summary:        Installs, configures, and manages Apache virtual hosts, web services, and modules.
 License:        Apache-2.0
 
@@ -50,6 +50,9 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/apache/
 
 
 %changelog
+* Tue Nov 15 2016 Alfredo Moralejo <amoralej@redhat.com> 1.10.0-2.05a0aac.git
+- Newton update 1.10.0 (05a0aac78092e46d544e03ad9adf796ae76f7ec2)
+
 * Fri Sep 16 2016 Haikel Guemar <hguemar@fedoraproject.org> 1.10.0-1.c04e062.git
 - Newton update 1.10.0 (c04e0620defb953a27cace6409e74ad1b708a2f4)
 
