@@ -1,14 +1,14 @@
 %{!?upstream_version: %global upstream_version %{commit}}
 %define upstream_name puppetlabs-apache
-%global commit c04e0620defb953a27cace6409e74ad1b708a2f4
+%global commit e31a6825eb394f4cdf77cffa5fe7dadba89bc7b0
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
 
 
 Name:           puppet-apache
-Version:        XXX
-Release:        XXX
+Version:        2.0.0
+Release:        1%{?alphatag}%{?dist}
 Summary:        Installs, configures, and manages Apache virtual hosts, web services, and modules.
 License:        ASL 2.0
 
@@ -50,5 +50,7 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/apache/
 
 
 %changelog
+* Thu Aug 24 2017 Alfredo Moralejo <amoralej@redhat.com> 2.0.0-1.e31a682git
+- Pike update 2.0.0 (e31a6825eb394f4cdf77cffa5fe7dadba89bc7b0)
 
 
