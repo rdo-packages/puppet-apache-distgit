@@ -1,14 +1,14 @@
 %{!?upstream_version: %global upstream_version %{commit}}
 %define upstream_name puppetlabs-apache
-%global commit c04e0620defb953a27cace6409e74ad1b708a2f4
+%global commit 7a33327f7b649f6dfa48aedd972036bfa23a399b
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
 
 
 Name:           puppet-apache
-Version:        XXX
-Release:        XXX
+Version:        4.0.0
+Release:        1%{?alphatag}%{?dist}
 Summary:        Installs, configures, and manages Apache virtual hosts, web services, and modules.
 License:        ASL 2.0
 
@@ -50,5 +50,8 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/apache/
 
 
 %changelog
+* Thu Feb 15 2018 RDO <dev@lists.rdoproject.org> 4.0.0-1.7a33327git
+- Update to post 4.0.0 (7a33327f7b649f6dfa48aedd972036bfa23a399b)
+
 
 
