@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f67c5c29_292d7157",
+        "filename": "puppet-apache.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 85
+      },
+      "writtenOn": "2021-05-20T11:08:38Z",
+      "side": 1,
+      "message": "please add a comment with the link to upstream bug tracker\nhttps://docs.fedoraproject.org/en-US/packaging-guidelines/PatchUpstreamStatus/",
+      "revId": "3d7e0360991ed8dcd90a5beaedc92bf5a99d920d",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": true
+    }
+  ]
+}
