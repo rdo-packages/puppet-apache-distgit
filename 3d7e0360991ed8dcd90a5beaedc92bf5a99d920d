@@ -16,6 +16,24 @@
       "revId": "3d7e0360991ed8dcd90a5beaedc92bf5a99d920d",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a4141e3d_1e3abf6e",
+        "filename": "puppet-apache.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2021-05-20T11:58:40Z",
+      "side": 1,
+      "message": "I think there is no point in reporting upstream a bug when there is no puppet release that can work in centos9 (I\u0027m testing with a build which includes unmerged patches). I think we need at least a puppet release that can work on top of ruby3 to report upstream so that they can test it.",
+      "parentUuid": "f67c5c29_292d7157",
+      "revId": "3d7e0360991ed8dcd90a5beaedc92bf5a99d920d",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": true
     }
   ]
 }
