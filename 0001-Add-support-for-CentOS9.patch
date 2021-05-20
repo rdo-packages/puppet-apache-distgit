@@ -1,0 +1,73 @@
+From a18f67e2be8024b273b2e8d2881c99f739c08e88 Mon Sep 17 00:00:00 2001
+From: Alfredo Moralejo <amoralej@redhat.com>
+Date: Thu, 20 May 2021 11:50:49 +0200
+Subject: [PATCH] Add support for CentOS9
+
+Current version of puppet-apache does not support CentOS9. Until we have
+proper support upstream, I'm proposing this temporary patch to fix basic
+issues I found when testing with p-o-i.
+---
+ manifests/params.pp | 7 +++++++
+ 1 file changed, 7 insertions(+)
+
+diff --git a/manifests/params.pp b/manifests/params.pp
+index ad1772bb..b12939ea 100644
+--- a/manifests/params.pp
++++ b/manifests/params.pp
+@@ -177,6 +177,7 @@ class apache::params inherits ::apache::version {
+       $mod_dir              = $facts['operatingsystemmajrelease'] ? {
+         '7'     => "${httpd_dir}/conf.modules.d",
+         '8'     => "${httpd_dir}/conf.modules.d",
++        '9'     => "${httpd_dir}/conf.modules.d",
+         default => "${httpd_dir}/conf.d",
+       }
+     }
+@@ -204,6 +205,7 @@ class apache::params inherits ::apache::version {
+     $suphp_configpath     = undef
+     $php_version = $facts['operatingsystemmajrelease'] ? {
+       '8'     => '7', # RedHat8
++      '9'     => '8', # RedHat9
+       default => '5', # RedHat5, RedHat6, RedHat7
+     }
+     $mod_packages         = {
+@@ -216,6 +218,7 @@ class apache::params inherits ::apache::version {
+       'authnz_ldap'           => $facts['operatingsystemmajrelease'] ? {
+         '7'     => 'mod_ldap',
+         '8'     => 'mod_ldap',
++        '9'     => 'mod_ldap',
+         default => 'mod_authz_ldap',
+       },
+       'authnz_pam'            => 'mod_authnz_pam',
+@@ -256,6 +259,7 @@ class apache::params inherits ::apache::version {
+       'ssl'                   => 'mod_ssl',
+       'wsgi'                  => $facts['operatingsystemmajrelease'] ? {
+         '8'     => 'python3-mod_wsgi', # RedHat8
++        '9'     => 'python3-mod_wsgi', # RedHat9
+         default => 'mod_wsgi',         # RedHat5, RedHat6, RedHat7
+       },
+       'dav_svn'               => 'mod_dav_svn',
+@@ -268,6 +272,7 @@ class apache::params inherits ::apache::version {
+       'nss' => 'libmodnss.so',
+       'wsgi'                  => $facts['operatingsystemmajrelease'] ? {
+         '8'     => 'mod_wsgi_python3.so',
++        '9'     => 'mod_wsgi_python3.so',
+         default => 'mod_wsgi.so',
+       },
+     }
+@@ -283,11 +288,13 @@ class apache::params inherits ::apache::version {
+     $alias_icons_path     = $facts['operatingsystemmajrelease'] ? {
+       '7'     => '/usr/share/httpd/icons',
+       '8'     => '/usr/share/httpd/icons',
++      '9'     => '/usr/share/httpd/icons',
+       default => '/var/www/icons',
+     }
+     $error_documents_path = $facts['operatingsystemmajrelease'] ? {
+       '7'     => '/usr/share/httpd/error',
+       '8'     => '/usr/share/httpd/error',
++      '9'     => '/usr/share/httpd/error',
+       default => '/var/www/error'
+     }
+     if $::osfamily == 'RedHat' {
+-- 
+2.26.2
+
