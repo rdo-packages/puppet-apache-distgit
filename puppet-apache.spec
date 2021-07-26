@@ -15,14 +15,9 @@ License:        ASL 2.0
 URL:            https://github.com/puppetlabs/puppetlabs-apache
 
 Source0:        https://github.com/puppetlabs/%{upstream_name}/archive/%{commit}.tar.gz#/%{upstream_name}-%{shortcommit}.tar.gz
-%if 0%{?rhel} > 8
-# Reported upstream in https://tickets.puppetlabs.com/browse/MODULES-11075
-Patch01:        0001-Add-support-for-CentOS9.patch
-%endif
 
 BuildArch:      noarch
 
-BuildRequires:  git-core
 Requires:       puppet-stdlib
 Requires:       puppet-concat
 Requires:       puppet >= 2.7.0
@@ -31,7 +26,7 @@ Requires:       puppet >= 2.7.0
 Installs, configures, and manages Apache virtual hosts, web services, and modules.
 
 %prep
-%autosetup -n %{upstream_name}-%{upstream_version} -S git
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 find . -type f -name ".*" -exec rm {} +
 find . -size 0 -exec rm {} +
