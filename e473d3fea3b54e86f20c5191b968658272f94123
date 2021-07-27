@@ -1,0 +1,9 @@
+Code-Review+2: Alex Schultz <aschultz@next-development.com>
+Code-Review+2: Yatin Karel <ykarel@redhat.com>
+Workflow+1: Yatin Karel <ykarel@redhat.com>
+Verified+2: Zuul CI <zuul@review.rdoproject.org>
+Submitted-by: Zuul CI <zuul@review.rdoproject.org>
+Submitted-at: Tue, 27 Jul 2021 05:37:59 +0000
+Reviewed-on: https://review.rdoproject.org/r/c/puppet/puppet-apache-distgit/+/34461
+Project: puppet/puppet-apache-distgit
+Branch: refs/heads/rpm-master
