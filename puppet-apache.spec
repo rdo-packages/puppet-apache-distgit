@@ -52,3 +52,4 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/apache/
 %changelog
 
 
+# REMOVEME: error caused by commit https://github.com/puppetlabs/puppetlabs-apache/commit/3448c1a5108bb21c1cf63d728f44f87b5c41b725
