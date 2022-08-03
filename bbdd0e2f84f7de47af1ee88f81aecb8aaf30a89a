@@ -1,0 +1,8 @@
+Code-Review+2: Alfredo Moralejo <amoralej@redhat.com>
+Workflow+1: Alfredo Moralejo <amoralej@redhat.com>
+Verified+2: Zuul CI <zuul@review.rdoproject.org>
+Submitted-by: Zuul CI <zuul@review.rdoproject.org>
+Submitted-at: Wed, 03 Aug 2022 12:08:09 +0000
+Reviewed-on: https://review.rdoproject.org/r/c/puppet/puppet-apache-distgit/+/44399
+Project: puppet/puppet-apache-distgit
+Branch: refs/heads/rpm-master
