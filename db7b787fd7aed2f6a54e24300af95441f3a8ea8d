@@ -16,6 +16,23 @@
       "message": "missing puppet-concat and puppet-stdlib",
       "revId": "db7b787fd7aed2f6a54e24300af95441f3a8ea8d",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "80e8ad31_b4bbd2b0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2022-09-30T14:14:10Z",
+      "side": 1,
+      "message": "recheck",
+      "revId": "db7b787fd7aed2f6a54e24300af95441f3a8ea8d",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }
