@@ -7,7 +7,7 @@
 
 
 Name:           puppet-apache
-Version:        8.2.0
+Version:        8.2.1
 Release:        1%{?alphatag}%{?dist}
 Summary:        Installs, configures, and manages Apache virtual hosts, web services, and modules.
 License:        ASL 2.0
@@ -50,6 +50,9 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/apache/
 
 
 %changelog
+* Fri Nov 10 2023 RDO <dev@lists.rdoproject.org> 8.2.1-1.3b4bae8git
+- Update to 8.2.1
+
 * Fri Sep 30 2022 RDO <dev@lists.rdoproject.org> 8.2.0-1.3b4bae8git
 - Update to post 8.2.0 (3b4bae8dbac8081e241d3049a520cc953705ceb5)
 
