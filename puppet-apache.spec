@@ -2,8 +2,8 @@
 %define upstream_name puppetlabs-apache
 
 Name:           puppet-apache
-Version:        XXX
-Release:        XXX
+Version:        12.0.3
+Release:        1%{?dist}
 Summary:        Installs, configures, and manages Apache virtual hosts, web services, and modules.
 License:        ASL 2.0
 
@@ -45,4 +45,7 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/apache/
 
 
 %changelog
+* Tue Apr 16 2024 RDO <dev@lists.rdoproject.org> 12.0.3-1
+- Update to 12.0.3
+
 
