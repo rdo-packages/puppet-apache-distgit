@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f408002d_90760dc0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2024-04-16T10:48:43Z",
+      "side": 1,
+      "message": "i think we should bump to 12.1.0 which is current version in puppetfile",
+      "revId": "4086b85cdee2a50cc0425fa2885d42828e34fcb5",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    }
+  ]
+}
