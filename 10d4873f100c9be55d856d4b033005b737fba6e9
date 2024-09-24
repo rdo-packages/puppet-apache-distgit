@@ -1,0 +1,8 @@
+Verified+2: Zuul CI <zuul@review.rdoproject.org>
+Workflow+1: Joel Capitao <jcapitao@redhat.com>
+Code-Review+2: Joel Capitao <jcapitao@redhat.com>
+Submitted-by: Zuul CI <zuul@review.rdoproject.org>
+Submitted-at: Tue, 24 Sep 2024 08:25:45 +0000
+Reviewed-on: https://review.rdoproject.org/r/c/puppet/puppet-apache-distgit/+/53651
+Project: puppet/puppet-apache-distgit
+Branch: refs/heads/dalmatian-rdo
